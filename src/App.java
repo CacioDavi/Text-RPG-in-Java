@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.util.Scanner;
+import Prompt.Prompt;
 
 public class App {
     public static Scanner scanner = new Scanner(System.in);
@@ -8,6 +9,7 @@ public class App {
 
         while (true) {
             String response = scanner.nextLine();
+            Prompt.SendPrompt(response.split(" "));
         }
         
     }

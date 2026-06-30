@@ -5,6 +5,7 @@ public class GameIntro {
         
         System.out.println("Welcome to Realmgate");
         System.out.println("A Text RPG with many possibilities."); 
+        System.out.println("\n");
       
         //NewPlayerConfig();
 
