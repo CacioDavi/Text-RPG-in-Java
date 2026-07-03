@@ -2,7 +2,7 @@ package Prompt.cmd;
 
 public class Print implements Cmd{
     @Override
-    public void start() {
-        System.out.println("teste");
+    public void start(String args) {
+        System.out.println(args);
     }
 }
