@@ -3,11 +3,10 @@ import java.io.IOException;
 public class GameIntro {
     public static void main() throws IOException {
         
-        System.out.println("Welcome to Realmgate");
-        System.out.println("A Text RPG with many possibilities."); 
-        System.out.println("\n");
+        System.out.print("Welcome to Realmgate\nA Text RPG with many possibilities.\n");
       
-        //NewPlayerConfig();
+        if()
+        NewPlayerConfig();
 
     }
 

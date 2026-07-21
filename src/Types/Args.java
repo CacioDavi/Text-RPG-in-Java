@@ -1,21 +1,24 @@
 package Types;
 
-import java.util.Arrays;
-
 public class Args {
     String args;
     Args(String value) {
         this.args = value;
     }
 
-    public String toArgs(String[] prompt) {
-        String[] p = prompt;
-
-        for(int i = 0; i < p.length; i++) {
-            p[i] = p[i + 1];
+    public static String toArgs(String[] prompt) {
+        String[] p = prompt; //[comando, arg1, arg2]
+        String arguments = "";
+        for(int i = 0; i < p.length - 1; i++) {
+            if(arguments != "") {
+                arguments = arguments + " " + p[i + 1];
+            }
+            else {
+                arguments = p[i + 1];
+            }
         }
-
-        return Arrays.toString(p);
+        
+        return arguments;
     }
 
     public String[] toList() {
